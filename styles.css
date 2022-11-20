@@ -1,8 +1,23 @@
 h1 {
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 15px;
+}
+
+#wrapper {
+    border-radius: 15px;
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+    padding-bottom: 37%;
 }
  
 body {
+    background-color: black;
     background-image: url('cinemabackground.jpg'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
