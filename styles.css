@@ -1,15 +1,17 @@
 h1 {
+    color: yellow;
+    font-size: 30px;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-top: 15px;
 }
 
 #wrapper {
-    border-radius: 15px;
-    width: 60%;
+    border-radius: 10px;
+    width: 90%;
     margin: 0 auto;
-    background-color: white;
-    padding-bottom: 37%;
+    background-color: black;
+    padding-bottom: 42%;
 }
  
 body {
