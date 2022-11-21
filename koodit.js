@@ -1,3 +1,23 @@
+// Kun käyttäjä klikkaa nappia, se näyttää ja piilottaa dropdown menun sisällön
+function myFunction() {
+    document.getElementById("munDropdown").classList.toggle("show");
+}
+
+// Sulje dropdown menu jos käyttäjä klikkaa sen ulkopuolelta 
+window.onclick = function(event) {
+    if (!event.target.matches('dropbutton')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+        }   
+    }  
+    }
+}
+
+
 let url ="https://www.finnkino.fi/xml/Schedule/" 
 var xmlhttp = new XMLHttpRequest();
  xmlhttp.open("GET", url, true);

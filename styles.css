@@ -24,6 +24,17 @@ body {
     padding-bottom: 25px;
 }
 
+.dropbutton {
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropbutton:hover {
+    background-color: yellow;
+}
+
 .dropdown {
     text-align: center;
 }
+
