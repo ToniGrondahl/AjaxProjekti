@@ -23,3 +23,7 @@ body {
     padding-top: 25px;
     padding-bottom: 25px;
 }
+
+.dropdown {
+    text-align: center;
+}
