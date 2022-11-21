@@ -18,6 +18,8 @@ for (i = 0; i < dropdowns.length; i++) {
 }
 
 
+
+
 let url ="https://www.finnkino.fi/xml/Schedule/" 
 var xmlhttp = new XMLHttpRequest();
  xmlhttp.open("GET", url, true);

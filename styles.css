@@ -1,9 +1,10 @@
 h1 {
     color: yellow;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 #wrapper {
@@ -18,10 +19,11 @@ body {
     background-color: black;
     background-image: url('cinemabackground.jpg'); 
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 40px;
+    padding-bottom: 35px;
 }
 
 .dropbutton {
