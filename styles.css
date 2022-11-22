@@ -1,6 +1,6 @@
 h1 {
-    color: yellow;
-    font-size: 40px;
+    color: gold;
+    font-size: 45px;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-top: 15px;
@@ -9,10 +9,10 @@ h1 {
 
 #wrapper {
     border-radius: 10px;
-    width: 90%;
-    margin: 0 auto;
+    width: 80%;
+    margin: auto;
     background-color: black;
-    padding-bottom: 42%;
+    padding-bottom: 38%;
 }
  
 body {
@@ -26,46 +26,34 @@ body {
     padding-bottom: 35px;
 }
 
-.dropbutton {
-    font-size: 15px;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.dropbutton:hover {
-    background-color: yellow;
-}
-
-.dropdown {
+#dropdown {
     text-align: center;
-}
-
-#theater {
-    align-items: center;
+    cursor: pointer;
+    float: left;
+    margin-left: 30em;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
 /* css styling of different elements */
 body{ 
 	font-family:Sans-serif; /* styling the font for the whole page */
 	}
-	#content { /* styling the margins for the content */
+#content { /* styling the margins for the content */
 	margin:2em;
 	}
 	
-	select {		
-	margin-right:em;
-	margin-left:1em;
-	}
-	
-    th, td {	/* styling the table rows */
-    padding: 10px;
+th, td {	/* styling the table rows */
+    padding: 20px;
     text-align:left;
-    color: yellow;
+    color: gold;
     border-bottom: 1px solid #2d2d2d;
     }		
     
-    .movietitle {	/* styling the text differently in the column where the name of the movie is displayed */
-    font-weight:bold;
-    padding-left:1em;
-    font-size:1.1em;
+.movietitle {	/* styling the text differently in the column where the name of the movie is displayed */
+    font-weight: bold;
+    padding-left: 1em;
+    font-size: 1.1em;
     }

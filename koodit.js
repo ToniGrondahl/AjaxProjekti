@@ -55,7 +55,7 @@ if(xmlhttp.readyState == 4 && xmlhttp.status == 200) { // Aseta vastauksen sisä
     }
         
 function loadData() { //funktio millä saadaan dataa valitusta teatterista 
-var option = document.getElementById("theater").value;
+var option = document.getElementById("dropdown").value;
 if (option=="tennis") {
     getData(url1);
 }
