@@ -14,23 +14,23 @@
         <div class ="header">
             <h1><strong>Leffasovellus</strong></h1>
         </div>
-        <select  name="mySelect" id="theater" onchange="loadData()"> <!-- calling the function to load the right data for each theater -->
-            <option  value="empty"></option> <!-- adding the possible theaters for the user to select-->
-                <option  value="tennis"> Tennispalatsi Helsinki</option>
-                <option  value="kino">Kinopalatsi Helsinki</option><!-- adding the possible theaters for the user to select-->
+        <select name="mySelect" id="theater" onchange="loadData()"> <!-- calling the function to load the right data for each theater -->
+            <option value="valinta">Valitse teatteri</option> <!-- adding the possible theaters for the user to select-->
+                <option value="tennis"> Tennispalatsi Helsinki</option>
+                <option value="kino">Kinopalatsi Helsinki</option><!-- adding the possible theaters for the user to select-->
                 <option value="maxim">Maxim Helsinki</option>
                 <option value="itis">Itis Helsinki</option>
-                <option  value="omena">Iso Omena Espoo</option>
-                <option  value="sello">Sello Espoo</option>
+                <option value="omena">Iso Omena Espoo</option>
+                <option value="sello">Sello Espoo</option>
                 <option value="flamingo">Flamingo Vantaa</option>
             </select>
-            </div>
-            <div id="searchfield" style="display:none;">Etsi elokuva  <input id="moviesearch" onkeyup="searchMovie()"></input> </div><!--Calling the function to update the search every time the user releases a key on the keyboard. This section is hidden until the user chooses a theater from the theater list. -->
+            
             <br/>
             <br/>
             <br/>
             <div id="moviedata"></div> <!-- div where all the dynamic data from finnkino xml will be displayed -->
         </div> 
+        
 
         <script src="koodit.js"></script>
 </body>

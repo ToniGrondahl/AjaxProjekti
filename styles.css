@@ -40,3 +40,32 @@ body {
     text-align: center;
 }
 
+#theater {
+    align-items: center;
+}
+
+/* css styling of different elements */
+body{ 
+	font-family:Sans-serif; /* styling the font for the whole page */
+	}
+	#content { /* styling the margins for the content */
+	margin:2em;
+	}
+	
+	select {		
+	margin-right:em;
+	margin-left:1em;
+	}
+	
+    th, td {	/* styling the table rows */
+    padding: 10px;
+    text-align:left;
+    color: yellow;
+    border-bottom: 1px solid #2d2d2d;
+    }		
+    
+    .movietitle {	/* styling the text differently in the column where the name of the movie is displayed */
+    font-weight:bold;
+    padding-left:1em;
+    font-size:1.1em;
+    }
