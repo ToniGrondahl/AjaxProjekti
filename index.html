@@ -13,8 +13,8 @@
         <div class ="header">
             <h1><strong>Leffasovellus</strong></h1>
         </div>
-        <select name="mySelect" id="dropdown" onchange="loadData()"> <!-- calling the function to load the right data for each theater -->
-            <option value="teatteri">Valitse teatteri</option> <!-- adding the possible theaters for the user to select-->
+        <select name="mySelect" id="dropdown" onchange="loadData()"> <!-- calling the function to load the right data for each theater -->           
+                <option value="teatteri">Valitse teatteri</option> <!-- adding the possible theaters for the user to seleft-->
                 <option value="tennis"> Tennispalatsi Helsinki</option>
                 <option value="kino">Kinopalatsi Helsinki</option><!-- adding the possible theaters for the user to select-->
                 <option value="maxim">Maxim Helsinki</option>
@@ -32,7 +32,8 @@
                 <option value="plevna">Plevna Tampere</option>
                 <option value="kinopalatsi">Kinopalatsi Turku</option>
                 <option value="luxemylly">Luxe Mylly Raisio</option>
-            </select>
+        </select>
+        <div id="searchfield" style="display:none;">Etsi elokuva <input id="moviesearch" onkeyup="searchMovie()"></input> </div><!--Calling the function to update the search every time the user releases a key on the keyboard. This section is hidden until the user chooses a theater from the theater list. -->
             <br/>
             <br/>
             <br/>

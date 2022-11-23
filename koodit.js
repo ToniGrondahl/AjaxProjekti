@@ -17,7 +17,7 @@ var url16="https://www.finnkino.fi/xml/Schedule/?area=1022";
 var url17="https://www.finnkino.fi/xml/Schedule/?area=1046";
 
 function getData(url) {
-var xmlhttp = new XMLHttpRequest(); //function to get the xml data from the finnkino page. The url is determined by the theater that is chosen by the user
+var xmlhttp = new XMLHttpRequest(); // funktio millä haetaan xml data finnkinon sivulta function to get the xml data from the finnkino page. The url is determined by the theater that is chosen by the user
  xmlhttp.open("GET", url, true); //starting the connection to get the xml file
  xmlhttp.send();
  
@@ -32,7 +32,6 @@ if(xmlhttp.readyState == 4 && xmlhttp.status == 200) { // Aseta vastauksen sisä
     var picture = schedule.getElementsByTagName("EventSmallImagePortrait");
     var timetable = schedule.getElementsByTagName("dttmShowStart");
     var lengthmin = schedule.getElementsByTagName("LengthInMinutes");
-    var rate = schedule.getElementsByTagName("RatingImageUrl")
     var place = schedule.getElementsByTagName("TheatreAuditorium");   
 
     var add = "<table id='movie-list'>"; // Start of the table 
@@ -61,7 +60,6 @@ if(xmlhttp.readyState == 4 && xmlhttp.status == 200) { // Aseta vastauksen sisä
             
             }
         }
-        
     }
         
 function loadData() { //funktio jolla saadaan dataa valitusta teatterista 
