@@ -5,6 +5,16 @@ var url4="http://www.finnkino.fi/xml/Schedule/?area=1038";    //setting the urls
 var url5="https://www.finnkino.fi/xml/Schedule/?area=1045";
 var url6="https://www.finnkino.fi/xml/Schedule/?area=1032";
 var url7="https://www.finnkino.fi/xml/Schedule/?area=1013";
+var url8="https://www.finnkino.fi/xml/Schedule/?area=1015";
+var url9="https://www.finnkino.fi/xml/Schedule/?area=1016";
+var url10="https://www.finnkino.fi/xml/Schedule/?area=1017";
+var url11="https://www.finnkino.fi/xml/Schedule/?area=1041";
+var url12="https://www.finnkino.fi/xml/Schedule/?area=1018";
+var url13="https://www.finnkino.fi/xml/Schedule/?area=1019";
+var url14="https://www.finnkino.fi/xml/Schedule/?area=1034";
+var url15="https://www.finnkino.fi/xml/Schedule/?area=1035";
+var url16="https://www.finnkino.fi/xml/Schedule/?area=1022";
+var url17="https://www.finnkino.fi/xml/Schedule/?area=1046";
 
 function getData(url) {
 var xmlhttp = new XMLHttpRequest(); //function to get the xml data from the finnkino page. The url is determined by the theater that is chosen by the user
@@ -54,7 +64,7 @@ if(xmlhttp.readyState == 4 && xmlhttp.status == 200) { // Aseta vastauksen sisä
         
     }
         
-function loadData() { //funktio millä saadaan dataa valitusta teatterista 
+function loadData() { //funktio jolla saadaan dataa valitusta teatterista 
 var option = document.getElementById("dropdown").value;
 if (option=="tennis") {
     getData(url1);
@@ -76,6 +86,36 @@ if (option=="maxim") {
 }                     
 if (option=="flamingo") {
     getData(url7)
+}
+if (option=="fantasia") {
+    getData(url8)
+}
+if (option=="scala") {
+    getData(url9)
+}
+if (option=="kuvapalatsi") {
+    getData(url10)
+}
+if (option=="strand") {
+    getData(url11)
+}
+if (option=="plaza") {
+    getData(url12)
+}
+if (option=="promenadi") {
+    getData(url13)
+}
+if (option=="cineatlas") {
+    getData(url14)
+}
+if (option=="plevna") {
+    getData(url15)
+}
+if (option=="kinopalatsi") {
+    getData(url16)
+}
+if (option=="luxemylly") {
+    getData(url17)
 }
 if (option=="empty") {
     document.getElementById("moviedata").innerHTML = "";
