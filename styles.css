@@ -12,7 +12,7 @@ h1 {
     width: 80%;
     margin: auto;
     background-color: black;
-    padding-bottom: 38%;
+    padding-bottom: 36%;
 }
  
 body {
@@ -33,13 +33,11 @@ body {
     float: left;
     margin-left: 30em;
     margin-right: 5em;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 3px;
-    padding-right: 3px;
+    padding: 3px;    
+    border-radius: 3px;
 }
 	
-th, td {	/* styling the table rows */
+th, td {    /* styling the table rows */
     padding: 20px;
     text-align:left;
     color: gold;
@@ -53,6 +51,30 @@ th, td {	/* styling the table rows */
     }
 
 #searchfield {
-    color: gold;
     margin-left: 3em;
+    border-radius: 3px;
+}
+
+#moviesearch {
+    border-radius: 3px;
+}
+
+#searchbtn {
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+a {
+    color: gold;
+    text-align: center;
+    padding-left: 35em;
+    padding-top: 20px;
+}
+
+a:hover {
+    color: yellow;
+}
+
+html {
+    scroll-behavior: smooth;
 }

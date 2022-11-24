@@ -33,11 +33,19 @@
                 <option value="kinopalatsi">Kinopalatsi Turku</option>
                 <option value="luxemylly">Luxe Mylly Raisio</option>
         </select>
-        <div id="searchfield" style="display:none;">Etsi elokuva <input id="moviesearch" onkeyup="searchMovie()"></input> </div><!--Calling the function to update the search every time the user releases a key on the keyboard. This section is hidden until the user chooses a theater from the theater list. -->
+        <div id="searchfield" style="display:none;">
+            <input type="search" id="moviesearch" placeholder="Etsi elokuva"></input> 
+            <input type="submit" id="searchbtn" value="Hae"> 
+        </div>
             <br/>
             <br/>
             <br/>
             <div id="moviedata"></div> <!-- div where all the dynamic data from finnkino xml will be displayed -->
+            <br>
+            <br>
+            <a href="#top"><svg xmlns="http://www.w3.org/2000/svg" id="topbutton" style="display:none" width="40" height="40" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                </svg></a>
     </div> 
         <script src="koodit.js"></script>
 </body>
