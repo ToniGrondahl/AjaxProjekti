@@ -45,7 +45,7 @@ function loadSchedule() {
     xmlhttp.send()
 
     xmlhttp.onreadystatechange = function() {
-        if(xmlhttp.readyState == 4 && xmlhttp.status == 200) { // Aseta vastauksen sisältö myDiv-nimiseen lohkoon
+        if(xmlhttp.readyState == 4 && xmlhttp.status == 200) { 
         let xmlDoc = xmlhttp.responseXML; //varastoidaan xml data muuttujaan jotta sitä voidaan käyttää myöhemmin
     
         let movie = xmlDoc.getElementsByTagName("Title"); //xml tiedostosta saatu data asetetaan muuttujiin ja ne näytetään sivulla
