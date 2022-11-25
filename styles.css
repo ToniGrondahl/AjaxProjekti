@@ -1,4 +1,4 @@
-h1 {
+h1 { /* Otsikon tyylittelyä */
     color: gold;
     font-size: 45px;
     text-align: center;
@@ -12,10 +12,10 @@ h1 {
     width: 80%;
     margin: auto;
     background-color: black;
-    padding-bottom: 36%;
+    padding-bottom: 34%;
 }
  
-body {
+body { /* body elementin tyylittelyä ja lisätään taustalle kuva */
     font-family: sans-serif;
     background-color: black;
     background-image: url('cinemabackground.jpg'); 
@@ -27,54 +27,40 @@ body {
     padding-bottom: 35px;
 }
 
-#dropdown {
+#theatreList { /* teatterivalikon sijoittelua ja tyylittelyä */
     text-align: center;
     cursor: pointer;
     float: left;
-    margin-left: 30em;
+    margin-left: 29em;
     margin-right: 5em;
     padding: 3px;    
     border-radius: 3px;
 }
 	
-th, td {    /* styling the table rows */
+th, td {    /* taulukko rivien tyylittelyä */
     padding: 20px;
     text-align:left;
     color: gold;
     border-bottom: 1px solid #2d2d2d;
     }		
     
-.movietitle {	/* styling the text differently in the column where the name of the movie is displayed */
+.movietitle {	/* tyylitellään teksti erilaiseksi siinä sarakkeessa missä lukee elokuvan nimi */
     font-weight: bold;
     padding-left: 1em;
     font-size: 1.1em;
     }
 
-#searchfield {
-    margin-left: 3em;
-    border-radius: 3px;
-}
-
-#moviesearch {
-    border-radius: 3px;
-}
-
-#searchbtn {
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-a {
-    color: gold;
+a {     /* tyylitellän takaisin ylös nappula */
+    color: gold; 
     text-align: center;
-    padding-left: 35em;
+    padding-left: 34em;
     padding-top: 20px;
 }
 
-a:hover {
+a:hover { 
     color: yellow;
 }
 
-html {
+html {    /* sulava liuku efekti sivustolle kun klikkaa takaisin ylös nappulaa */
     scroll-behavior: smooth;
 }

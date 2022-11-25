@@ -8,45 +8,26 @@
     <title>Ajax sovellus</title>
     <meta charset="utf-8"/>
 </head>
-<body>
+<body onload = "loadAreas()"> <!-- Kun sivu latautuu se kutsuu loadAreas funktiota koodit.js tiedostosta
+    joka hakee teatterit select listaan finnkinon XML tiedostosta -->
     <div id="wrapper">
         <div class ="header">
             <h1><strong>Leffasovellus</strong></h1>
         </div>
-        <select name="mySelect" id="dropdown" onchange="loadData()"> <!-- calling the function to load the right data for each theater -->           
-                <option value="teatteri">Valitse teatteri</option> <!-- adding the possible theaters for the user to seleft-->
-                <option value="tennis"> Tennispalatsi Helsinki</option>
-                <option value="kino">Kinopalatsi Helsinki</option><!-- adding the possible theaters for the user to select-->
-                <option value="maxim">Maxim Helsinki</option>
-                <option value="itis">Itis Helsinki</option>
-                <option value="omena">Iso Omena Espoo</option>
-                <option value="sello">Sello Espoo</option>
-                <option value="flamingo">Flamingo Vantaa</option>
-                <option value="fantasia">Fantasia Jyväskylä</option>
-                <option value="scala">Scala Kuopio</option>
-                <option value="kuvapalatsi">Kuvapalatsi Lahti</option>
-                <option value="strand">Strand Lappeenranta</option>
-                <option value="plaza">Plaza Oulu</option>
-                <option value="promenadi">Promenadi Pori</option>
-                <option value="cineatlas">Cine Atlas Tampere</option>
-                <option value="plevna">Plevna Tampere</option>
-                <option value="kinopalatsi">Kinopalatsi Turku</option>
-                <option value="luxemylly">Luxe Mylly Raisio</option>
-        </select>
-        <div id="searchfield" style="display:none;">
-            <input type="search" id="moviesearch" placeholder="Etsi elokuva"></input> 
-            <input type="submit" id="searchbtn" value="Hae"> 
-        </div>
+        <select id="theatreList" onchange ="loadSchedule()"></select>
             <br/>
             <br/>
             <br/>
-            <div id="moviedata"></div> <!-- div where all the dynamic data from finnkino xml will be displayed -->
+            <table id="list"></table>
+            <div id="moviedata"></div> <!-- div minne finnkinon xml data sijoittuu -->
             <br>
             <br>
+            <!-- Lisätään nappula jota klikkaamalla pääsee takaisin ylös sivustolla-->
             <a href="#top"><svg xmlns="http://www.w3.org/2000/svg" id="topbutton" style="display:none" width="40" height="40" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
                 </svg></a>
     </div> 
+    <!-- javascript tiedosto -->
         <script src="koodit.js"></script>
 </body>
 </html>
